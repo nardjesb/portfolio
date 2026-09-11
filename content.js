@@ -1,54 +1,87 @@
-// ============ EDITABLE CONTENT FILE ============
+/* =========================================================
+   PORTFOLIO CONTENT
+   Edit the arrays below to add certifications or projects.
+   No other file needs to change.
+   ========================================================= */
 
+/**
+ * CERTIFICATIONS
+ * Add a new object to this array for each certificate.
+ * Fields: title, issuer, date
+ */
 const certifications = [
-    {
-        title: "Statistical Analysis using R (Online Course)",
-        issuer: "MIRA ACADEMY",
-        date: "July 2026"
-    },
-    {
-        title: "Python for Genomics (Coursework)",
-        issuer: "Coursera / Johns Hopkins University",
-        date: "In Progress"
-    },
-    {
-        title: "ISO 9001:2015 Quality Management Systems",
-        issuer: "IFAQT",
-        date: "April 2019"
-    },
-    {
-        title: "Good Laboratory Practices (GLP) in Quality Control",
-        issuer: "WANYLAB Laboratory",
-        date: "April 2019"
-    }
+  {
+    title: "Statistical Analysis by Using R",
+    issuer: "Mira Academy — Certificate of Participation",
+    date: "July 2026"
+  },
+  {
+    title: "ISO 9001:2015 Quality Management System",
+    issuer: "IFAQT",
+    date: "April 2019"
+  },
+  {
+    title: "Application of Good Laboratory Practices in Quality Control Laboratory",
+    issuer: "WANYLAB",
+    date: "April 2019"
+  }
+  // Add future certifications here, e.g.:
+  // { title: "...", issuer: "...", date: "..." },
 ];
 
+/**
+ * PROJECTS
+ * Add a new object to this array for each project.
+ * Fields:
+ *   title       - project name
+ *   category    - short label, e.g. "R", "Python", "Bioinformatics"
+ *   description - short description
+ *   objective   - scientific objective (optional)
+ *   tools       - string of tools/technologies (optional)
+ *   repo        - GitHub repository URL (optional)
+ *   demo        - live demo URL (optional)
+ *   placeholder - true if this is a "coming soon" card with no content yet
+ */
 const projects = [
-    {
-        title: "Curcumin-Based Nanotherapy for Inflammatory Bowel Diseases",
-        category: "Nanopharmacology / Wet Lab",
-        description: "Master's thesis project focusing on the synthesis of MgAl-HDL-Cur nanoparticles via co-precipitation. Characterized physicochemical properties (XRD, FTIR) and validated antioxidant efficiency on mouse models, demonstrating redox balance restoration comparable to 5-FU. Graduated with Highest Honors.",
-        tools: "Co-precipitation, XRD, FTIR, In Vivo Mouse Models, Redox Assays",
-        repo: "",
-        demo: "",
-        placeholder: false
-    },
-    {
-        title: "Statistical Workflow for Pharmacological Data in R",
-        category: "R / Biostatistics",
-        description: "An open repository containing reproducible R scripts for biostatistical analysis, hypothesis testing, ANOVA, and data visualization of biological experimental datasets.",
-        tools: "R, RStudio, ggplot2, dplyr",
-        repo: "https://github.com/yourusername/R-pharmacology-analysis",
-        demo: "",
-        placeholder: false
-    },
-    {
-        title: "Genomic Data Processing & Sequence Analysis",
-        category: "Bioinformatics / Python",
-        description: "Python scripts designed for processing FASTA/FASTQ sequence formats, inspecting nucleotide distributions, and parsing genomic data.",
-        tools: "Python, Pandas, Biopython",
-        repo: "https://github.com/yourusername/python-genomics-pipeline",
-        demo: "",
-        placeholder: false
-    }
+  {
+    title: "R projects",
+    category: "R",
+    description: "Applied data analysis and statistics work in R — to be added as projects are completed.",
+    placeholder: true
+  },
+  {
+    title: "Python projects",
+    category: "Python",
+    description: "Python-based analysis projects — currently being developed.",
+    placeholder: true
+  },
+  {
+    title: "Bioinformatics projects",
+    category: "Bioinformatics",
+    description: "Genomic and biological data analysis projects — coming soon.",
+    placeholder: true
+  },
+  {
+    title: "Data analysis projects",
+    category: "Data analysis",
+    description: "Exploratory and applied data analysis work — coming soon.",
+    placeholder: true
+  },
+  {
+    title: "Computational drug discovery",
+    category: "Drug discovery",
+    description: "Computational approaches to drug design and discovery — coming soon.",
+    placeholder: true
+  }
+  // Add a completed project here, e.g.:
+  // {
+  //   title: "Project name",
+  //   category: "R",
+  //   description: "Short description of what it does.",
+  //   objective: "Scientific objective of the project.",
+  //   tools: "R, ggplot2, dplyr",
+  //   repo: "https://github.com/username/repo-name",
+  //   demo: "",
+  //   placeholder: false
+  // },
 ];
