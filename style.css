@@ -504,3 +504,79 @@ p{ margin: 0; }
   .cert-list li{ grid-template-columns: 1fr; }
   .research-card{ padding: 1.75rem; }
 }
+/* =========================================================
+   RESEARCH — CHART, CHALLENGES, CONCLUSION
+   ========================================================= */
+.research-card__chart{
+  margin-top: 2rem;
+  padding-top: 1.75rem;
+  border-top: 1px solid var(--line);
+}
+.chart__title{
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: var(--text);
+  margin-bottom: 1rem;
+}
+.chart__svg{ width: 100%; height: auto; max-width: 560px; display: block; margin: 0 auto; }
+.chart__grid line{ stroke: var(--line); stroke-width: 1; }
+.chart__grid text{ fill: var(--text-soft); font-family: var(--font-body); }
+.chart__axis{ stroke: var(--text-soft); stroke-width: 1.2; }
+.chart__axis-title{ fill: var(--text-soft); font-size: 10.5px; font-family: var(--font-body); }
+.chart__bar--control{ fill: var(--accent-secondary); }
+.chart__bar--treated{ fill: var(--accent-strong); }
+.chart__errorbar{ stroke: var(--text); stroke-width: 1.3; }
+.chart__label{ fill: var(--text-soft); font-size: 11px; font-family: var(--font-body); }
+.chart__value{ fill: var(--text); font-size: 10.5px; font-family: var(--font-body); font-weight: 600; }
+.chart__sig-line{ stroke: var(--text); stroke-width: 1; fill: none; }
+.chart__sig{ fill: var(--text); font-size: 12px; font-weight: 700; font-family: var(--font-body); }
+.chart__caption{
+  margin-top: 1rem;
+  font-size: 0.85rem;
+  color: var(--text-soft);
+  max-width: 68ch;
+}
+
+.research-card__challenges{
+  margin-top: 2rem;
+  padding-top: 1.75rem;
+  border-top: 1px solid var(--line);
+}
+.research-card__challenges h4{
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 0.85rem;
+  color: var(--text);
+  margin-bottom: 1rem;
+}
+.research-card__challenges ul{ display: flex; flex-direction: column; gap: 0.9rem; }
+.research-card__challenges li{
+  font-size: 0.94rem;
+  color: var(--text-soft);
+  padding-left: 1.1rem;
+  position: relative;
+}
+.research-card__challenges li::before{
+  content: "";
+  position: absolute;
+  left: 0; top: 0.5em;
+  width: 6px; height: 6px;
+  border-radius: 50%;
+  background: var(--accent-strong);
+}
+.research-card__challenges strong{ color: var(--text); font-weight: 600; }
+
+.research-card__conclusion{
+  margin-top: 1.75rem;
+  padding-top: 1.75rem;
+  border-top: 1px solid var(--line);
+  color: var(--text-soft);
+  font-size: 0.96rem;
+}
+.research-card__conclusion strong{ color: var(--text); }
+
+@media (max-width: 680px){
+  .chart__label{ font-size: 9px; }
+  .chart__value{ font-size: 9px; }
+}
