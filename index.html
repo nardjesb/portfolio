@@ -455,87 +455,153 @@
 
   <!-- ============ RESEARCH PROJECT ============ -->
 
+  <!-- ============ RESEARCH PROJECT ============ -->
   <section class="section research" id="research">
-
     <div class="section__inner">
-
-      <h2 class="section__heading">
-        Research project
-      </h2>
-
+      <h2 class="section__heading">Research project</h2>
       <article class="research-card">
-
-        <p class="research-card__eyebrow">
-          Master's research — Graduated with Très Bien
-        </p>
-
-        <h3 class="research-card__title">
-          Nano-therapy based on curcumin for the treatment of inflammatory bowel diseases
-        </h3>
-
-        <p class="research-card__meta">
-          USTHB · 2022 · Inter-laboratory research collaboration
-        </p>
+        <p class="research-card__eyebrow">Master's research — Graduated with Très Bien</p>
+        <h3 class="research-card__title">Curcumin-Loaded MgAl Layered Double Hydroxide as a Nano-Therapy for Inflammatory Bowel Disease</h3>
+        <p class="research-card__meta">USTHB · 2022 · Inter-laboratory collaboration (Cellular Pharmacology &amp; Natural Gases, USTHB)</p>
 
         <p class="research-card__desc">
-          Development and evaluation of a nanoparticulate system based on
-          curcumin incorporated into MgAl layered double hydroxide
-          (MgAl-HDL-Cur) for a potential therapeutic approach to chronic
-          inflammatory bowel diseases.
+          Chronic inflammatory bowel diseases (IBD) — Crohn's disease and ulcerative colitis —
+          affect an estimated 396 cases per 100,000 people worldwide and are conventionally
+          treated with steroidal anti-inflammatory drugs, which carry significant side effects.
+          This project developed and evaluated a nanoparticulate alternative: curcumin, a
+          natural antioxidant and anti-inflammatory compound, intercalated into a MgAl layered
+          double hydroxide (LDH) matrix (MgAl-HDL-Cur), synthesized by co-precipitation.
         </p>
 
         <div class="research-card__cols">
-
           <div>
-
-            <h4>
-              Work included
-            </h4>
-
+            <h4>Methods</h4>
             <ul>
-
-              <li>Synthesis by co-precipitation</li>
-
-              <li>
-                Physicochemical characterization using XRD and FTIR
-              </li>
-
-              <li>
-                Biological evaluation using a murine model
-              </li>
-
-              <li>
-                Assessment of oxidative stress and redox balance
-              </li>
-
+              <li>Synthesis by co-precipitation at constant basic pH (pH = 11)</li>
+              <li>Structural characterization by X-ray diffraction (XRD) and FTIR spectroscopy</li>
+              <li>Oxidative-stress biomarkers (MDA, NO) measured under H&#8322;O&#8322;-induced stress</li>
+              <li>Benchmarked against the reference compound 5-fluorouracil (5-FU)</li>
             </ul>
-
           </div>
-
-
           <div>
-
-            <h4>
-              Key finding
-            </h4>
-
+            <h4>Key finding</h4>
             <p>
-              The experimental formulation was associated with a reduction
-              in oxidative stress and restoration of redox balance, with
-              an observed efficacy comparable to 5-FU in the experimental
-              model.
+              XRD confirmed effective curcumin intercalation: the (003) diffraction peak shifted
+              from 2&#952; = 11.78&deg; to 10.92&deg;, with peak broadening and an increased
+              interlayer parameter, while the hydrotalcite crystal structure remained intact.
+              FTIR showed shifts in the O&ndash;H and C=O vibration bands consistent with
+              hydrogen bonding between curcumin and the LDH framework. Biochemically, MDA levels
+              dropped by ~55% in H&#8322;O&#8322;-Cur samples versus H&#8322;O&#8322; alone
+              (p &lt; 0.0001), indicating a significant reduction in oxidative stress.
             </p>
-
           </div>
-
         </div>
 
+        <!-- ============ RESULT CHART ============ -->
+        <div class="research-card__chart">
+          <h4 class="chart__title">Effect of curcumin on MDA levels (oxidative stress marker)</h4>
+          <svg viewBox="0 0 560 300" role="img" aria-labelledby="mdaChartDesc" class="chart__svg">
+            <desc id="mdaChartDesc">
+              Bar chart of malondialdehyde (MDA) levels in nM per mg protein across four groups:
+              H2O2-Cur 0.0028, H2O2 0.0064, 5FU-Cur 0.0010, 5FU 0.0014. Curcumin treatment
+              significantly reduces MDA in the H2O2 group.
+            </desc>
+
+            <!-- gridlines + y-axis labels -->
+            <g class="chart__grid" font-size="11">
+              <line x1="60" y1="30"  x2="540" y2="30"  />
+              <line x1="60" y1="80"  x2="540" y2="80"  />
+              <line x1="60" y1="130" x2="540" y2="130" />
+              <line x1="60" y1="180" x2="540" y2="180" />
+              <line x1="60" y1="230" x2="540" y2="230" />
+              <text x="50" y="234" text-anchor="end">0.000</text>
+              <text x="50" y="184" text-anchor="end">0.002</text>
+              <text x="50" y="134" text-anchor="end">0.004</text>
+              <text x="50" y="84"  text-anchor="end">0.006</text>
+              <text x="50" y="34"  text-anchor="end">0.008</text>
+            </g>
+
+            <!-- axis line -->
+            <line x1="60" y1="230" x2="540" y2="230" class="chart__axis" />
+
+            <!-- bars -->
+            <rect x="110" y="160" width="70" height="70" class="chart__bar chart__bar--treated" />
+            <line x1="145" y1="150" x2="145" y2="170" class="chart__errorbar" />
+            <text x="145" y="252" text-anchor="middle" class="chart__label">H&#8322;O&#8322;-Cur</text>
+            <text x="145" y="148" text-anchor="middle" class="chart__value">0.0028</text>
+
+            <rect x="220" y="70" width="70" height="160" class="chart__bar chart__bar--control" />
+            <line x1="255" y1="55" x2="255" y2="85" class="chart__errorbar" />
+            <text x="255" y="252" text-anchor="middle" class="chart__label">H&#8322;O&#8322;</text>
+            <text x="255" y="53" text-anchor="middle" class="chart__value">0.0064</text>
+
+            <rect x="330" y="205" width="70" height="25" class="chart__bar chart__bar--treated" />
+            <line x1="365" y1="197" x2="365" y2="213" class="chart__errorbar" />
+            <text x="365" y="252" text-anchor="middle" class="chart__label">5FU-Cur</text>
+            <text x="365" y="195" text-anchor="middle" class="chart__value">0.0010</text>
+
+            <rect x="440" y="195" width="70" height="35" class="chart__bar chart__bar--control" />
+            <line x1="475" y1="185" x2="475" y2="205" class="chart__errorbar" />
+            <text x="475" y="252" text-anchor="middle" class="chart__label">5FU</text>
+            <text x="475" y="183" text-anchor="middle" class="chart__value">0.0014</text>
+
+            <!-- significance brackets -->
+            <path d="M145,45 L145,40 L255,40 L255,45" class="chart__sig-line" />
+            <text x="200" y="35" text-anchor="middle" class="chart__sig">****</text>
+
+            <path d="M365,175 L365,170 L475,170 L475,175" class="chart__sig-line" />
+            <text x="420" y="165" text-anchor="middle" class="chart__sig">ns</text>
+
+            <text x="20" y="130" text-anchor="middle" class="chart__axis-title" transform="rotate(-90 20 130)">MDA level (nM/mg protein)</text>
+          </svg>
+          <p class="chart__caption">
+            **** p &lt; 0.0001 vs. H&#8322;O&#8322;; ns = not significant. Curcumin (Cur)
+            co-treatment significantly lowered MDA levels in the oxidative-stress (H&#8322;O&#8322;)
+            group, indicating reduced lipid peroxidation.
+          </p>
+        </div>
+
+        <!-- ============ CHALLENGES ============ -->
+        <div class="research-card__challenges">
+          <h4>Challenges &amp; how they were addressed</h4>
+          <ul>
+            <li>
+              <strong>Unavailable animal model.</strong> The protocol was originally designed
+              for in vivo validation in a murine model of intestinal inflammation, but mice
+              were not available for the study. The protocol was adapted to an ex vivo approach
+              using human blood samples (red and white blood cell pellets) as the biological
+              substrate for the MDA and NO assays, allowing the antioxidant/anti-inflammatory
+              effect of the nanohybrid to still be evaluated meaningfully.
+            </li>
+            <li>
+              <strong>Imperfectly filtered blood samples.</strong> The available samples were
+              poorly filtered, containing predominantly red blood cells with only a small
+              fraction of white blood cells, which could limit assay precision. Analysis
+              focused on relative comparisons between treatment groups rather than absolute
+              values, using well-established colorimetric assays (TBARS for MDA, Griess
+              reaction for NO) suited to this type of sample.
+            </li>
+            <li>
+              <strong>Curcumin's pH instability.</strong> Curcumin degrades rapidly in basic
+              conditions (pH &gt; 8) — exactly the pH range required for HDL co-precipitation.
+              Synthesis pH and reflux conditions were carefully controlled and monitored
+              throughout the co-precipitation step to intercalate curcumin while minimizing its
+              degradation.
+            </li>
+          </ul>
+        </div>
+
+        <p class="research-card__conclusion">
+          <strong>Conclusion:</strong> Physicochemical characterization confirmed that curcumin
+          was successfully intercalated into the MgAl-HDL framework without altering its
+          specific properties, and biochemical assays showed a significant reduction in
+          oxidative stress markers. This nano-therapy approach appears promising for improving
+          the pharmacokinetic and pharmacodynamic profile of curcumin in the treatment of
+          chronic IBD, warranting further in vivo validation as future work.
+        </p>
       </article>
-
     </div>
-
   </section>
-
 
   <!-- ============ SKILLS ============ -->
 
